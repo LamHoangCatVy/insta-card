@@ -10,7 +10,7 @@ const Service = () => {
     <Fade in={isVisible} timeout={500}>
       <div
         ref={targetRef}
-        className={`flex flex-col justify-center items-center sm:flex-col sm:justify-center sm:items-center lg:flex-row mt-8`}
+        className={`flex flex-col justify-center items-center sm:flex-col sm:justify-center sm:items-center lg:flex-row my-8 `}
       >
         <div className="flex flex-col lg:flex-col bg-transparent mx-16 sm:mx-16 md:mx-16 lg:mx-16 w-96 sm:w-96 md:w-[500px] lg:w-[500px]">
           <div>
