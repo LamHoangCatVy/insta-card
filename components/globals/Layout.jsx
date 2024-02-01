@@ -1,6 +1,7 @@
 import Service from "../mortgage-calculator/Service";
-import Footer from "./Footer";
-import NavBar from "./NavBar";
+import Demo from "../demo/Demo";
+import Footer from "../footer/Footer";
+import NavBar from "../navbar/NavBar";
 import React from "react";
 
 const Layout = ({ children }) => {
@@ -8,7 +9,6 @@ const Layout = ({ children }) => {
     <>
       <NavBar />
       <main>{children}</main>
-      <Service />
       <Footer />
     </>
   );
