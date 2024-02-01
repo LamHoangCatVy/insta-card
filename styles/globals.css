@@ -1,14 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Add the styles for the slider thumb */
-.thumb-slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 16px; /* Set the width of the thumb */
-  height: 16px; /* Set the height of the thumb */
-  background-color: white; /* Set the background color */
-  border: 2px solid black; /* Set the border color and width */
-  border-radius: 50%; /* Create a circular thumb */
-}
