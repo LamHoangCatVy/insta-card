@@ -42,7 +42,7 @@ const Calculator = () => {
       {/* Purchase price and down payment input fields */}
       <div className="flex flex-col sm:flex-row md:flex-row lg:flex-row m-4">
         {/* Purchase Price */}
-        <div className="mb-8 px-4">
+        <div className="px-4">
           <label className="text-white block text-sm font-medium mt-8">Purchase Price: ${purchasePrice.toLocaleString()}</label>
           <Slider
             value={purchasePrice}
@@ -69,7 +69,7 @@ const Calculator = () => {
 
         {/* Down Payment */}
         <div className="mb-8 px-4">
-          <label className="text-white block text-sm font-medium md:mt-8">Down Payment: ${downPayment.toLocaleString()}</label>
+          <label className="text-white block text-sm font-medium sm:md-8 md:mt-8 mt-8">Down Payment: ${downPayment.toLocaleString()}</label>
           <Slider
             value={downPayment}
             min={0}

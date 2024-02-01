@@ -15,7 +15,7 @@
 - Contentful: Content storage
 - Vercel: Host site
 
-# Bug I've faced:    
+# Big bug I've faced:    
 - Hydration: 
     -> Solution: Find the place where I misuse the HTML rules (for example h3 cannot be placed outside of h6)
 - Contentful API fetching, and using image from Contentful
