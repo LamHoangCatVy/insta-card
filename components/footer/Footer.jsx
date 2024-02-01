@@ -10,13 +10,13 @@ const navigation = {
     },
     {
       name: "GitHub",
-      href: "https://github.com/lifteddotsite/",
+      href: "https://github.com/LamHoangCatVy/insta-card",
       icon: (props) => <FaGithub />,
     },
 
     {
       name: "LinkedIn",
-      href: "https://linkedin.com/company/lifteddotsite",
+      href: "https://www.linkedin.com/company/saigon-digital/",
       icon: (props) => <FaLinkedin />,
     },
   ],
