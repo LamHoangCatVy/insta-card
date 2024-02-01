@@ -20,7 +20,7 @@ const Demo = () => {
         <Image src={frame} alt="iPhone Frame" width={800} height={1000} />
 
         {/* First ChatBubble positioned at top left */}
-        <div ref={bubble1Ref} className="absolute top-0 left-0 p-2 ">
+        <div ref={bubble1Ref} className="absolute top-0 left-0 p-2 w-64 ">
           <ChatBubble
             message="Easy way for users to create and share their business cards on the digital platform"
             isVisible={isVisibleBubble1}
