@@ -1,24 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import CardBlock from './CardBlock';
-import Fade from '@mui/material/Fade';
-import useIntersectionObserver from '../../hooks/useIntersectionObserver';
+import CardBlock from "./CardBlock";
+import useIntersectionObserver from "../../hooks/useIntersectionObserver";
+import { Fade } from "@mui/material";
 
 const Card = ({ card }) => {
-  const [reversedCards, setReversedCards] = useState([]);
   const { targetRef, isVisible } = useIntersectionObserver();
 
-  useEffect(() => {
-    setReversedCards(card.reverse());
-  }, [card]);
-
   return (
-    <Fade in={isVisible} timeout={500}>
-      <div ref={targetRef} className="flex items-center justify-center">
-        <div className="max-w-screen-lg w-full p-4">
-          <CardBlock cards={reversedCards} />
+    <div className="p-4">
+      <Fade in={isVisible} timeout={500}>
+        <div ref={targetRef}>
+          <CardBlock cards={card} />
         </div>
-      </div>
-    </Fade>
+      </Fade>
+    </div>
   );
 };
 

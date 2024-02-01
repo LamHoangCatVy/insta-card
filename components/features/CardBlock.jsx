@@ -8,7 +8,7 @@ const CardBlock = ({ cards }) => {
         const { svgIcon, title, description } = item.fields;
         const svg = svgIcon.content[0].content[0].value;
         return (
-          <div key={index} className="flex flex-wrap justify-between items-center w-full md:w-1/2 lg:w-1/3 xl:w-1/4">
+          <div key={index} className="flex flex-wrap justify-between items-center w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4">
             <div className="	h-64 bg-blue-300 shadow-blue-400  bg-opacity-5 rounded-[5px] shadow-inner w-full m-2 ">
               <div className="flex flex-col items-center justify-center p-4 m-4">
                 <Image src={svg} alt={title} className=" rounded-t-lg" width={50} height={50} />
